@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Auto Update Display</title>
+</head>
+<body>
+  <p><b>Text Displaying Program</b></p>
+
+  <input class="js-input" placeholder="Type Something" onkeyup="displayOnScreen();">
+
+  <p class="js-show"></p>
+  <script>
+    function displayOnScreen(){
+      const displayOnScreen = document.querySelector('.js-input');
+
+      document.querySelector('.js-show').innerHTML = displayOnScreen.value;
+// this displays the whole value written each time and our mind thinks itsactually removing single single item 
+      return;
+    }
+  </script>
+</body>
+</html>
