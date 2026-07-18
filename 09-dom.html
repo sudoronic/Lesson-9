@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+    <button>Hello</button>
+    <button class="js-button">Second Button</button>
+
+    <script>
+        /*
+        document.body.innerHTML = 'hello';
+        document.title = 'good job';
+        //document object links to the webpage and it represents/models the webpage
+        */
+    /*
+    console.log(document.title);
+    document.title = 'changed';
+
+    console.log(document.body);
+    //means we can have html elements inside javscript
+    //the DOM combines HTML and Javascript together
+    //if html element is inside the javascript it is converted into javascript object
+    console.log(typeof document.body);
+    //object see upper line
+      console.log(document.body.innerHTML);
+
+      document.body.innerHTML = '<button>Good Job!</button>';
+    */
+    //object
+    console.log(document.querySelector('button').innerHTML);
+    document.querySelector('button')
+      .innerHTML = 'Changed';
+    console.log(document.querySelector('.js-button'));
+    document.querySelector('.js-button').innerHTML = '2nd Button';
+
+    const buttonElement = document.querySelector('.js-button');
+
+    console.log(buttonElement);
+    
+
+    </script>
+  </body>
+</html>
